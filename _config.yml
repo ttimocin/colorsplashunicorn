@@ -1,0 +1,39 @@
+# Jekyll Configuration for GitHub Pages
+title: "Color Splash"
+description: "Color Splash Website"
+baseurl: ""
+url: "https://ttimocin.github.io/colorsplashunicorn"
+
+# Permalink configuration to remove .html extensions
+permalink: /:basename/
+
+# Exclude files
+exclude:
+  - README.md
+  - .htaccess
+
+# Plugins
+plugins:
+  - jekyll-relative-links
+
+# Relative links configuration
+relative_links:
+  enabled: true
+  collections: false
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Collections
+collections_dir: ""
+
+# Default layouts
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default" 
