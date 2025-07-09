@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="tr" data-lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="about_title">Hakkımızda - Color Splash Unicorn Boyama</title>
+    <meta name="description" data-i18n="about_description" content="Color Splash Unicorn Boyama uygulamasının hikayesi ve arkasındaki ekip hakkında bilgi edinin">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Theme colors -->
+    <meta name="theme-color" content="#FF6B6B">
+    <meta name="msapplication-TileColor" content="#FF6B6B">
+</head>
+<body>
+    <!-- Dil seçim menüsü -->
+    <div class="language-selector">
+        <ul>
+            <li><a href="#" class="lang-btn active" data-lang="tr" title="Türkçe">TR</a></li>
+            <li><a href="#" class="lang-btn" data-lang="en" title="English">EN</a></li>
+            <li><a href="#" class="lang-btn" data-lang="de" title="Deutsch">DE</a></li>
+        </ul>
+    </div>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Çocuk Boyama Logo" width="140" height="60">
+                </a>
+            </div>
+            
+            <!-- Mobil menü butonu -->
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" data-i18n="menu_home">Ana Sayfa</a></li>
+                    <li><a href="features.html" data-i18n="menu_features">Özellikler</a></li>
+                    <li><a href="about.html" class="active" data-i18n="menu_about">Hakkımızda</a></li>
+                    <li><a href="privacy.html" data-i18n="menu_privacy">Gizlilik Politikası</a></li>
+                    <li><a href="contact.html" data-i18n="menu_contact">İletişim</a></li>
+                    <li><a href="download.html" class="btn-download" data-i18n="menu_download">İndir</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 data-i18n="about_title">Hakkımızda</h1>
+                <p data-i18n="about_subtitle">Çocuk Boyama uygulamasının hikayesi ve arkasındaki ekip</p>
+            </div>
+        </section>
+
+        <section class="about-story">
+            <div class="container">
+                <div class="about-row">
+                    <div class="about-content">
+                        <h2 data-i18n="about_story_title">Hikayemiz</h2>
+                        <p data-i18n="about_story_p1">Color Splash Unicorn Boyama uygulaması, çocukların yaratıcılığını ve hayal gücünü geliştirmek amacıyla 2023 yılında kuruldu. Ebeveynler olarak, çocuklarımızın dijital dünyada kaliteli zaman geçirmelerini sağlamak istedik.</p>
+                        <p data-i18n="about_story_p2">Geleneksel boyama kitaplarının dijital ortama taşınması fikri ile yola çıktık ve çocuklar için özel olarak tasarlanmış, eğlenceli ve eğitici bir uygulama geliştirdik.</p>
+                        <p data-i18n="about_story_p3">Bugün, Color Splash Unicorn Boyama uygulaması dünya genelinde milyonlarca çocuk tarafından kullanılmakta ve her geçen gün daha da büyümektedir.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="assets/images/hakkimiz.jpg" alt="Hikayemiz" onerror="this.src='assets/images/1.jpg'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-mission">
+            <div class="container">
+                <div class="about-row reverse">
+                    <div class="about-content">
+                        <h2 data-i18n="about_mission_title">Misyonumuz</h2>
+                        <p data-i18n="about_mission_p1">Misyonumuz, çocukların yaratıcılığını ve hayal gücünü teknoloji ile birleştirerek geliştirmek ve onlara eğlenceli bir öğrenme ortamı sunmaktır.</p>
+                        <p><strong data-i18n="about_mission_values">İnandığımız değerler:</strong></p>
+                        <div class="mission-values">
+                            <div class="mission-value">
+                                <div class="mission-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div>
+                                    <h3 data-i18n="about_value_creativity">Yaratıcılık</h3>
+                                    <p data-i18n="about_value_creativity_desc">Çocukların sınırsız hayal gücünü desteklemek</p>
+                                </div>
+                            </div>
+                            <div class="mission-value">
+                                <div class="mission-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div>
+                                    <h3 data-i18n="about_value_education">Eğitim</h3>
+                                    <p data-i18n="about_value_education_desc">Eğlenceli içerikler ile öğrenmeyi teşvik etmek</p>
+                                </div>
+                            </div>
+                            <div class="mission-value">
+                                <div class="mission-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div>
+                                    <h3 data-i18n="about_value_security">Güvenlik</h3>
+                                    <p data-i18n="about_value_security_desc">%100 çocuk dostu ve güvenli bir dijital ortam sunmak</p>
+                                </div>
+                            </div>
+                            <div class="mission-value">
+                                <div class="mission-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div>
+                                    <h3 data-i18n="about_value_quality">Kalite</h3>
+                                    <p data-i18n="about_value_quality_desc">Sürekli gelişen ve yenilenen içerikler ile en kaliteli deneyimi sağlamak</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="assets/images/misyon.jpg" alt="Misyonumuz" onerror="this.src='assets/images/2.jpg'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="company-stats">
+            <div class="container">
+                <h2 data-i18n="about_stats_title">Rakamlarla Biz</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">1M+</div>
+                        <div class="stat-label" data-i18n="about_stats_downloads">İndirme</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label" data-i18n="about_stats_templates">Boyama Şablonu</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label" data-i18n="about_stats_countries">Ülke</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4.8★</div>
+                        <div class="stat-label" data-i18n="about_stats_rating">Kullanıcı Puanı</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="app-download">
+            <div class="container">
+                <div class="download-content">
+                    <h2 data-i18n="home_download_now">Hemen İndirin!</h2>
+                    <p data-i18n="home_download_desc">Çocuğunuzun hayal gücünü geliştirmek için şimdi Color Splash Unicorn Boyama uygulamasını indirin.</p>
+                    <div class="download-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=com.taytek.colorsplash" class="btn-store" target="_blank">
+                            <img src="assets/images/google-play.png" alt="Google Play" onerror="this.style.display='none'">
+                        </a>
+                        <a href="#" class="btn-store">
+                            <img src="assets/images/app-store.png" alt="App Store" onerror="this.style.display='none'">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo-white.png" alt="Çocuk Boyama Logo" onerror="this.src='assets/images/logo.png'">
+                    <p data-i18n="footer_description">Çocukların yaratıcılığını geliştiren eğlenceli boyama uygulaması</p>
+                </div>
+                <div class="footer-links">
+                    <h3 data-i18n="footer_quick_links">Hızlı Bağlantılar</h3>
+                    <ul>
+                        <li><a href="index.html" data-i18n="menu_home">Ana Sayfa</a></li>
+                        <li><a href="features.html" data-i18n="menu_features">Özellikler</a></li>
+                        <li><a href="about.html" data-i18n="menu_about">Hakkımızda</a></li>
+                        <li><a href="contact.html" data-i18n="menu_contact">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3 data-i18n="footer_legal">Yasal</h3>
+                    <ul>
+                        <li><a href="privacy.html" data-i18n="menu_privacy">Gizlilik Politikası</a></li>
+                        <li><a href="terms.html" data-i18n="footer_terms">Kullanım Şartları</a></li>
+                        <li><a href="gdpr.html" data-i18n="footer_gdpr">KVKK</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3 data-i18n="footer_follow">Bizi Takip Edin</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2024</span> Çocuk Boyama. <span data-i18n="footer_rights">Tüm hakları saklıdır.</span></p>
+                <p><span data-i18n="footer_design">Tasarım ve Geliştirme:</span> <a href="https://appanddesign.com/" target="_blank" rel="noopener noreferrer">AppandDesign</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/language.js"></script>
+</body>
+</html>
+
+<style>
+/* About sayfası için ek stiller */
+.about-story,
+.company-stats {
+    padding: 80px 0;
+}
+
+.mission-values {
+    margin-top: 30px;
+}
+
+.mission-value {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.mission-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+
+.mission-value h3 {
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+}
+
+.mission-value p {
+    margin-bottom: 0;
+    color: #666;
+}
+
+.company-stats {
+    background-color: var(--light-color);
+}
+
+.company-stats h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.stat-item {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-family: 'Baloo 2', cursive;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .mission-value {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+    }
+
+    .stat-item {
+        padding: 30px 20px;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+    }
+}
+</style> 
+

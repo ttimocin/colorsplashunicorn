@@ -1,0 +1,17 @@
+{
+    "name": "Color Splash Unicorn Boyama",
+    "short_name": "Color Splash",
+    "description": "Çocuklar için eğlenceli boyama uygulaması",
+    "icons": [
+        {
+            "src": "../logo-white.png",
+            "sizes": "any",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "theme_color": "#FF6B6B",
+    "background_color": "#F7FFF7",
+    "display": "standalone",
+    "start_url": "/"
+} 

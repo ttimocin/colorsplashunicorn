@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="tr" data-lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="contact_title">İletişim - Color Splash Unicorn Boyama</title>
+    <meta name="description" content="Color Splash Unicorn Boyama uygulaması ile ilgili sorularınız için bizimle iletişime geçin">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Theme colors -->
+    <meta name="theme-color" content="#FF6B6B">
+    <meta name="msapplication-TileColor" content="#FF6B6B">
+</head>
+<body>
+    <!-- Dil seçim menüsü -->
+    <div class="language-selector">
+        <ul>
+            <li><a href="#" class="lang-btn active" data-lang="tr" title="Türkçe">TR</a></li>
+            <li><a href="#" class="lang-btn" data-lang="en" title="English">EN</a></li>
+            <li><a href="#" class="lang-btn" data-lang="de" title="Deutsch">DE</a></li>
+        </ul>
+    </div>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Çocuk Boyama Logo" width="140" height="60">
+                </a>
+            </div>
+            
+            <!-- Mobil menü butonu -->
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" data-i18n="menu_home">Ana Sayfa</a></li>
+                    <li><a href="features.html" data-i18n="menu_features">Özellikler</a></li>
+                    <li><a href="about.html" data-i18n="menu_about">Hakkımızda</a></li>
+                    <li><a href="privacy.html" data-i18n="menu_privacy">Gizlilik Politikası</a></li>
+                    <li><a href="contact.html" class="active" data-i18n="menu_contact">İletişim</a></li>
+                    <li><a href="download.html" class="btn-download" data-i18n="menu_download">İndir</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 data-i18n="contact_title">İletişim</h1>
+                <p data-i18n="contact_subtitle">Sorularınız için bizimle iletişime geçin</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-info-wrapper">
+                    <div class="contact-info">
+                        <h2 data-i18n="contact_info">İletişim Bilgileri</h2>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3 data-i18n="contact_email">E-posta</h3>
+                                <p>info@colorsplashunicorn.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Telefon</h3>
+                                <p>+90 (212) 123 45 67</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Adres</h3>
+                                <p>Maslak Mahallesi<br>Bilim Sokak No: 123<br>34485 Sarıyer / İstanbul</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Çalışma Saatleri</h3>
+                                <p>Pazartesi - Cuma: 09:00 - 18:00<br>Cumartesi: 10:00 - 16:00<br>Pazar: Kapalı</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h2 data-i18n="contact_form">İletişim Formu</h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name" data-i18n="contact_name">İsim Soyisim</label>
+                                <input type="text" id="name" name="name" required data-minlength="2" data-maxlength="50">
+                                <div class="error-message"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" data-i18n="contact_email">E-posta</label>
+                                <input type="email" id="email" name="email" required>
+                                <div class="error-message"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" data-i18n="contact_subject">Konu</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Lütfen Seçiniz</option>
+                                    <option value="support">Teknik Destek</option>
+                                    <option value="suggestion">Öneri</option>
+                                    <option value="partnership">İş Birliği</option>
+                                    <option value="other">Diğer</option>
+                                </select>
+                                <div class="error-message"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" data-i18n="contact_message">Mesajınız</label>
+                                <textarea id="message" name="message" required data-minlength="10" data-maxlength="1000"></textarea>
+                                <div class="error-message"></div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" data-i18n="contact_send">Gönder</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="map-section">
+                    <h2>Konum</h2>
+                    <div class="map-container">
+                        <p>Interaktif harita buraya gelecek</p>
+                        <small>Google Maps veya başka bir harita servisi entegrasyonu yapılabilir</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <h2>Sık Sorulan Sorular</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Uygulama ücretsiz mi?
+                        </div>
+                        <div class="accordion-content">
+                            <div>
+                                Evet, Color Splash Unicorn Boyama uygulaması tamamen ücretsizdir. Temel boyama özellikleri ve birçok şablona ücretsiz olarak erişebilirsiniz. Premium içerikler için isteğe bağlı satın alma seçenekleri bulunmaktadır.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Hangi yaş grubu için uygun?
+                        </div>
+                        <div class="accordion-content">
+                            <div>
+                                Uygulamamız 3-12 yaş arası çocuklar için özel olarak tasarlanmıştır. Farklı yaş grupları için uygun zorluk seviyelerine sahip boyama sayfaları bulunmaktadır.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            İnternet bağlantısı gerekli mi?
+                        </div>
+                        <div class="accordion-content">
+                            <div>
+                                Hayır, uygulama bir kez indirildikten sonra çevrimdışı olarak kullanılabilir. Sadece yeni içerikleri indirmek için internet bağlantısına ihtiyaç duyarsınız.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Kişisel veriler nasıl korunuyor?
+                        </div>
+                        <div class="accordion-content">
+                            <div>
+                                Çocukların gizliliğini korumak bizim önceliğimizdir. Hiçbir kişisel veri toplanmaz ve gizlilik politikamız GDPR ve COPPA standartlarına uygun olarak hazırlanmıştır.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Teknik destek nasıl alabilirim?
+                        </div>
+                        <div class="accordion-content">
+                            <div>
+                                Teknik destek için yukarıdaki iletişim formunu kullanabilir veya doğrudan info@colorsplashunicorn.com adresine e-posta gönderebilirsiniz. Genellikle 24 saat içinde yanıt veriyoruz.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo-white.png" alt="Çocuk Boyama Logo" onerror="this.src='assets/images/logo.png'">
+                    <p data-i18n="footer_description">Çocukların yaratıcılığını geliştiren eğlenceli boyama uygulaması</p>
+                </div>
+                <div class="footer-links">
+                    <h3 data-i18n="footer_quick_links">Hızlı Bağlantılar</h3>
+                    <ul>
+                        <li><a href="index.html" data-i18n="menu_home">Ana Sayfa</a></li>
+                        <li><a href="features.html" data-i18n="menu_features">Özellikler</a></li>
+                        <li><a href="about.html" data-i18n="menu_about">Hakkımızda</a></li>
+                        <li><a href="contact.html" data-i18n="menu_contact">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3 data-i18n="footer_legal">Yasal</h3>
+                    <ul>
+                        <li><a href="privacy.html" data-i18n="menu_privacy">Gizlilik Politikası</a></li>
+                        <li><a href="terms.html" data-i18n="footer_terms">Kullanım Şartları</a></li>
+                        <li><a href="gdpr.html" data-i18n="footer_gdpr">KVKK</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3 data-i18n="footer_follow">Bizi Takip Edin</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Çocuk Boyama. <span data-i18n="footer_copyright">Tüm hakları saklıdır.</span></p>
+                <p><span data-i18n="footer_design">Tasarım ve Geliştirme:</span> <a href="https://appanddesign.com/" target="_blank" rel="noopener noreferrer">AppandDesign</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/language.js"></script>
+    <script>
+        // Sayfa yüklendikten sonra akordiyon işlevini başlat
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.ColorSplashApp && window.ColorSplashApp.initAccordion) {
+                window.ColorSplashApp.initAccordion();
+            }
+        });
+    </script>
+</body>
+</html> 
+

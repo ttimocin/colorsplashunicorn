@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="gdpr_title">GDPR Bilgilendirmesi - Çocuk Boyama</title>
+    <meta name="description" data-i18n="gdpr_description" content="Color Splash uygulamasının GDPR uyumluluğu ve veri koruma hakları">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="Color Splash Logo">
+                    </a>
+                </div>
+                
+                <nav class="nav">
+                    <ul class="nav-menu">
+                        <li><a href="index.html" data-i18n="nav_home">Ana Sayfa</a></li>
+                        <li><a href="features.html" data-i18n="nav_features">Özellikler</a></li>
+                        <li><a href="download.html" data-i18n="nav_download">İndir</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">Hakkımızda</a></li>
+                        <li><a href="contact.html" data-i18n="nav_contact">İletişim</a></li>
+                    </ul>
+                    
+                    <div class="language-selector">
+                        <select id="languageSelect">
+                            <option value="tr">🇹🇷 TR</option>
+                            <option value="en">🇺🇸 EN</option>
+                            <option value="de">🇩🇪 DE</option>
+                        </select>
+                    </div>
+                </nav>
+                
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-i18n="gdpr_title">GDPR Bilgilendirmesi</h1>
+            <p data-i18n="gdpr_subtitle">Genel Veri Koruma Yönetmeliği kapsamında haklarınız</p>
+        </div>
+    </section>
+
+    <!-- GDPR Content -->
+    <section class="gdpr-content">
+        <div class="container">
+            <div class="content-box">
+                <h2 data-i18n="gdpr_overview">Genel Bakış</h2>
+                <p data-i18n="gdpr_overview_desc">GDPR (Genel Veri Koruma Yönetmeliği), Avrupa Birliği'ndeki kişilerin kişisel verilerinin korunmasını sağlamak için oluşturulmuş bir yönetmeliktir. Color Splash olarak, bu yönetmeliğe tam uyum sağlamakta ve kullanıcılarımızın haklarını korumaktayız.</p>
+                
+                <h3 data-i18n="gdpr_rights_title">GDPR Kapsamındaki Haklarınız</h3>
+                <p data-i18n="gdpr_rights_desc">GDPR kapsamında aşağıdaki haklara sahipsiniz:</p>
+                
+                <ul class="gdpr-list">
+                    <li><strong data-i18n="gdpr_right_access">Erişim Hakkı</strong>: <span data-i18n="gdpr_right_access_desc">Kişisel verilerinizin işlenip işlenmediğini öğrenme ve bu verilere erişim talep etme hakkınız vardır.</span></li>
+                    <li><strong data-i18n="gdpr_right_rectification">Düzeltme Hakkı</strong>: <span data-i18n="gdpr_right_rectification_desc">Yanlış veya eksik kişisel verilerinizin düzeltilmesini talep etme hakkınız vardır.</span></li>
+                    <li><strong data-i18n="gdpr_right_erasure">Silme Hakkı</strong>: <span data-i18n="gdpr_right_erasure_desc">Belirli koşullar altında kişisel verilerinizin silinmesini talep etme hakkınız vardır.</span></li>
+                    <li><strong data-i18n="gdpr_right_restrict">İşlemeyi Kısıtlama Hakkı</strong>: <span data-i18n="gdpr_right_restrict_desc">Belirli durumlarda kişisel verilerinizin işlenmesinin kısıtlanmasını talep etme hakkınız vardır.</span></li>
+                    <li><strong data-i18n="gdpr_right_portability">Veri Taşınabilirliği Hakkı</strong>: <span data-i18n="gdpr_right_portability_desc">Kişisel verilerinizi yapılandırılmış, yaygın kullanılan ve makine tarafından okunabilir formatta alma hakkınız vardır.</span></li>
+                    <li><strong data-i18n="gdpr_right_object">İtiraz Etme Hakkı</strong>: <span data-i18n="gdpr_right_object_desc">Belirli durumlarda kişisel verilerinizin işlenmesine itiraz etme hakkınız vardır.</span></li>
+                </ul>
+                
+                <h3 data-i18n="gdpr_data_title">İşlenen Veriler</h3>
+                <p data-i18n="gdpr_data_desc">Uygulamamızda minimal düzeyde veri işlenmektedir. Toplanan veriler anonim kullanım istatistikleri ve teknik verilerle sınırlıdır. Hiçbir kişisel kimlik bilgisi toplanmamaktadır.</p>
+                
+                <h3 data-i18n="gdpr_processing_title">İşleme Amacı</h3>
+                <p data-i18n="gdpr_processing_desc">Verilerinizi sadece uygulamanın performansını artırmak, teknik sorunları gidermek ve kullanıcı deneyimini iyileştirmek amacıyla işliyoruz. Hiçbir veri pazarlama veya reklam amaçlı kullanılmaz.</p>
+                
+                <h3 data-i18n="gdpr_children_title">Çocukların Verileri</h3>
+                <p data-i18n="gdpr_children_desc">Uygulamamız 16 yaşından küçük çocuklar için tasarlanmıştır. GDPR'nin 8. maddesi uyarınca, 16 yaşından küçük çocuklardan bilinçli olarak kişisel veri toplamayız ve ebeveyn onayı gerektiren hiçbir özellik sunmayız.</p>
+                
+                <h3 data-i18n="gdpr_transfer_title">Veri Aktarımı</h3>
+                <p data-i18n="gdpr_transfer_desc">Verileriniz AB dışına aktarılmaz. Tüm veriler AB sınırları içindeki güvenli sunucularda saklanır ve işlenir.</p>
+                
+                <h3 data-i18n="gdpr_changes_title">Politika Değişiklikleri</h3>
+                <p data-i18n="gdpr_changes_desc">Bu GDPR bilgilendirmesinde yapılacak değişiklikler hakkında kullanıcıları bilgilendiririz. Önemli değişikliklerde ek onay talep edebiliriz.</p>
+                
+                <h3 data-i18n="gdpr_contact_title">İletişim ve Başvuru</h3>
+                <p data-i18n="gdpr_contact_desc">GDPR haklarınızı kullanmak veya veri işleme ile ilgili sorularınız için info@colorsplash.com adresinden bizimle iletişime geçebilirsiniz. Başvurularınızı 30 gün içinde yanıtlayacağız.</p>
+                
+                <div class="last-updated">
+                    <p><em data-i18n="gdpr_last_updated">Son güncelleme: 01.06.2023</em></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo-white.png" alt="Color Splash">
+                    </div>
+                    <p data-i18n="footer_description">Çocuklar için eğlenceli ve eğitici boyama uygulaması</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer_quick_links">Hızlı Bağlantılar</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav_home">Ana Sayfa</a></li>
+                        <li><a href="features.html" data-i18n="nav_features">Özellikler</a></li>
+                        <li><a href="download.html" data-i18n="nav_download">İndir</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">Hakkımızda</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer_legal">Yasal</h4>
+                    <ul>
+                        <li><a href="privacy.html" data-i18n="nav_privacy">Gizlilik Politikası</a></li>
+                        <li><a href="terms.html" data-i18n="nav_terms">Kullanım Şartları</a></li>
+                        <li><a href="gdpr.html" class="active" data-i18n="nav_gdpr">GDPR</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer_contact">İletişim</h4>
+                    <ul>
+                        <li><a href="contact.html" data-i18n="nav_contact">İletişim</a></li>
+                        <li><a href="mailto:info@colorsplash.com">info@colorsplash.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2024</span> Color Splash. <span data-i18n="footer_rights">Tüm hakları saklıdır.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html> 
+
