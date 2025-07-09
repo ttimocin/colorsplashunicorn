@@ -1,8 +1,8 @@
 # Jekyll Configuration for GitHub Pages
 title: "Color Splash"
 description: "Color Splash Website"
-baseurl: ""
-url: "https://ttimocin.github.io/colorsplashunicorn"
+baseurl: "/colorsplashunicorn"
+url: "https://ttimocin.github.io"
 
 # Permalink configuration to remove .html extensions
 permalink: /:basename/

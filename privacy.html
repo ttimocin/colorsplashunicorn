@@ -11,11 +11,11 @@ permalink: /privacy/
     <meta name="description" data-i18n="privacy_description" content="Color Splash uygulamasının gizlilik politikası ve veri koruma ilkeleri">
     
     <!-- Favicon -->
-    <link rel="icon" href="assets/images/logo.png" type="image/png">
-    <link rel="apple-touch-icon" href="assets/images/logo.png">
+    <link rel="icon" href="{{ '/assets/images/logo.png' | relative_url }}" type="image/png">
+    <link rel="apple-touch-icon" href="{{ '/assets/images/logo.png' | relative_url }}">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -36,8 +36,8 @@ permalink: /privacy/
     <header class="site-header">
         <div class="container">
             <div class="logo">
-                <a href="index.html">
-                    <img src="assets/images/logo.png" alt="Çocuk Boyama Logo" width="140" height="60">
+                <a href="{{ '/' | relative_url }}">
+                    <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Çocuk Boyama Logo" width="140" height="60">
                 </a>
             </div>
             
@@ -50,12 +50,12 @@ permalink: /privacy/
             
             <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html" data-i18n="menu_home">Ana Sayfa</a></li>
-                    <li><a href="features.html" data-i18n="menu_features">Özellikler</a></li>
-                    <li><a href="about.html" data-i18n="menu_about">Hakkımızda</a></li>
-                    <li><a href="privacy.html" class="active" data-i18n="menu_privacy">Gizlilik Politikası</a></li>
-                    <li><a href="contact.html" data-i18n="menu_contact">İletişim</a></li>
-                    <li><a href="download.html" class="btn-download" data-i18n="menu_download">İndir</a></li>
+                    <li><a href="{{ '/' | relative_url }}" data-i18n="menu_home">Ana Sayfa</a></li>
+                    <li><a href="{{ '/features/' | relative_url }}" data-i18n="menu_features">Özellikler</a></li>
+                    <li><a href="{{ '/about/' | relative_url }}" data-i18n="menu_about">Hakkımızda</a></li>
+                    <li><a href="{{ '/privacy/' | relative_url }}" class="active" data-i18n="menu_privacy">Gizlilik Politikası</a></li>
+                    <li><a href="{{ '/contact/' | relative_url }}" data-i18n="menu_contact">İletişim</a></li>
+                    <li><a href="{{ '/download/' | relative_url }}" class="btn-download" data-i18n="menu_download">İndir</a></li>
                 </ul>
             </nav>
         </div>
@@ -116,24 +116,24 @@ permalink: /privacy/
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="assets/images/logo-white.png" alt="Çocuk Boyama Logo" onerror="this.src='assets/images/logo.png'">
+                    <img src="{{ '/assets/images/logo-white.png' | relative_url }}" alt="Çocuk Boyama Logo">
                     <p data-i18n="footer_description">Çocukların yaratıcılığını geliştiren eğlenceli boyama uygulaması</p>
                 </div>
                 <div class="footer-links">
                     <h3 data-i18n="footer_quick_links">Hızlı Bağlantılar</h3>
                     <ul>
-                        <li><a href="index.html" data-i18n="menu_home">Ana Sayfa</a></li>
-                        <li><a href="features.html" data-i18n="menu_features">Özellikler</a></li>
-                        <li><a href="about.html" data-i18n="menu_about">Hakkımızda</a></li>
-                        <li><a href="contact.html" data-i18n="menu_contact">İletişim</a></li>
+                        <li><a href="{{ '/' | relative_url }}" data-i18n="menu_home">Ana Sayfa</a></li>
+                        <li><a href="{{ '/features/' | relative_url }}" data-i18n="menu_features">Özellikler</a></li>
+                        <li><a href="{{ '/about/' | relative_url }}" data-i18n="menu_about">Hakkımızda</a></li>
+                        <li><a href="{{ '/contact/' | relative_url }}" data-i18n="menu_contact">İletişim</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
                     <h3 data-i18n="footer_legal">Yasal</h3>
                     <ul>
-                        <li><a href="privacy.html" data-i18n="menu_privacy">Gizlilik Politikası</a></li>
-                        <li><a href="terms.html" data-i18n="footer_terms">Kullanım Şartları</a></li>
-                        <li><a href="gdpr.html" data-i18n="footer_gdpr">KVKK</a></li>
+                        <li><a href="{{ '/privacy/' | relative_url }}" data-i18n="menu_privacy">Gizlilik Politikası</a></li>
+                        <li><a href="{{ '/terms/' | relative_url }}" data-i18n="footer_terms">Kullanım Şartları</a></li>
+                        <li><a href="{{ '/gdpr/' | relative_url }}" data-i18n="footer_gdpr">KVKK</a></li>
                     </ul>
                 </div>
                 <div class="footer-social">
@@ -153,8 +153,8 @@ permalink: /privacy/
     </footer>
 
     <!-- JavaScript -->
-    <script src="assets/js/language.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="{{ '/assets/js/language.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
 </html> 
 
