@@ -11,11 +11,12 @@ permalink: /gdpr/
     <meta name="description" data-i18n="gdpr_description" content="Color Splash uygulamasının GDPR uyumluluğu ve veri koruma hakları">
     
     <!-- Favicon -->
-    <link rel="icon" href="{{ '/assets/images/logo.png' | relative_url }}" type="image/png">
-    <link rel="apple-touch-icon" href="{{ '/assets/images/logo.png' | relative_url }}">
+    <link rel="icon" href="/assets/images/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/images/logo.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -28,36 +29,28 @@ permalink: /gdpr/
     <header class="site-header">
         <div class="container">
             <div class="logo">
-                <a href="{{ '/' | relative_url }}">
-                    <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Color Splash Logo">
+                <a href="/index">
+                    <img src="/assets/images/logo.png" alt="Çocuk Boyama Logo" width="140" height="60">
                 </a>
             </div>
             
+            <!-- Mobil menü butonu -->
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
             <nav class="main-nav">
-                    <ul>
-                    <li><a href="/" data-i18n="menu_home">Ana Sayfa</a></li>
+                <ul>
+                    <li><a href="/index" data-i18n="menu_home">Ana Sayfa</a></li>
                     <li><a href="/features" data-i18n="menu_features">Özellikler</a></li>
                     <li><a href="/about" data-i18n="menu_about">Hakkımızda</a></li>
                     <li><a href="/privacy" data-i18n="menu_privacy">Gizlilik Politikası</a></li>
                     <li><a href="/contact" data-i18n="menu_contact">İletişim</a></li>
-                    <li><a href="/download" class="btn-download active" data-i18n="menu_download">İndir</a></li>
-                    </ul>
-                    
-                    <div class="language-selector">
-                        <select id="languageSelect">
-                            <option value="tr">🇹🇷 TR</option>
-                            <option value="en">🇺🇸 EN</option>
-                            <option value="de">🇩🇪 DE</option>
-                        </select>
-                    </div>
-                </nav>
-                
-                <div class="mobile-menu-btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
+                    <li><a href="/download" class="btn-download" data-i18n="menu_download">İndir</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 

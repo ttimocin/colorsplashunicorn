@@ -11,10 +11,10 @@ permalink: /404.html
     <meta name="description" content="Aradığınız sayfa bulunamadı">
     
     <!-- Favicon -->
-    <link rel="icon" href="{{ '/assets/images/logo.png' | relative_url }}" type="image/png">
+    <link rel="icon" href="/assets/images/logo.png" type="image/png">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -100,18 +100,26 @@ permalink: /404.html
     <header class="site-header">
         <div class="container">
             <div class="logo">
-                <a href="{{ '/' | relative_url }}">
-                    <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Color Splash Logo">
+                <a href="/index">
+                    <img src="/assets/images/logo.png" alt="Çocuk Boyama Logo" width="140" height="60">
                 </a>
+            </div>
+            
+            <!-- Mobil menü butonu -->
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
             
             <nav class="main-nav">
                 <ul>
-                    <li><a href="{{ '/' | relative_url }}">Ana Sayfa</a></li>
-                    <li><a href="{{ '/features/' | relative_url }}">Özellikler</a></li>
-                    <li><a href="{{ '/download/' | relative_url }}">İndir</a></li>
-                    <li><a href="{{ '/about/' | relative_url }}">Hakkımızda</a></li>
-                    <li><a href="{{ '/contact/' | relative_url }}">İletişim</a></li>
+                    <li><a href="/index" data-i18n="menu_home">Ana Sayfa</a></li>
+                    <li><a href="/features" data-i18n="menu_features">Özellikler</a></li>
+                    <li><a href="/about" data-i18n="menu_about">Hakkımızda</a></li>
+                    <li><a href="/privacy" data-i18n="menu_privacy">Gizlilik Politikası</a></li>
+                    <li><a href="/contact" data-i18n="menu_contact">İletişim</a></li>
+                    <li><a href="/download" class="btn-download" data-i18n="menu_download">İndir</a></li>
                 </ul>
             </nav>
         </div>

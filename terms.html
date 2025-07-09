@@ -11,11 +11,12 @@ permalink: /terms/
     <meta name="description" data-i18n="terms_description" content="Color Splash uygulamasının kullanım şartları ve koşulları">
     
     <!-- Favicon -->
-    <link rel="icon" href="{{ '/assets/images/logo.png' | relative_url }}" type="image/png">
-    <link rel="apple-touch-icon" href="{{ '/assets/images/logo.png' | relative_url }}">
+    <link rel="icon" href="/assets/images/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/images/logo.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -28,36 +29,28 @@ permalink: /terms/
     <header class="site-header">
         <div class="container">
             <div class="logo">
-                <a href="{{ '/' | relative_url }}">
-                    <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Color Splash Logo">
+                <a href="/index">
+                    <img src="/assets/images/logo.png" alt="Çocuk Boyama Logo" width="140" height="60">
                 </a>
             </div>
             
+            <!-- Mobil menü butonu -->
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
             <nav class="main-nav">
-                    <ul>
-                    <li><a href="/" data-i18n="menu_home">Ana Sayfa</a></li>
+                <ul>
+                    <li><a href="/index" data-i18n="menu_home">Ana Sayfa</a></li>
                     <li><a href="/features" data-i18n="menu_features">Özellikler</a></li>
                     <li><a href="/about" data-i18n="menu_about">Hakkımızda</a></li>
                     <li><a href="/privacy" data-i18n="menu_privacy">Gizlilik Politikası</a></li>
                     <li><a href="/contact" data-i18n="menu_contact">İletişim</a></li>
-                    <li><a href="/download" class="btn-download active" data-i18n="menu_download">İndir</a></li>
-                    </ul>
-                    
-                    <div class="language-selector">
-                        <select id="languageSelect">
-                            <option value="tr">🇹🇷 TR</option>
-                            <option value="en">🇺🇸 EN</option>
-                            <option value="de">🇩🇪 DE</option>
-                        </select>
-                    </div>
-                </nav>
-                
-                <div class="mobile-menu-btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
+                    <li><a href="/download" class="btn-download" data-i18n="menu_download">İndir</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -133,7 +126,7 @@ permalink: /terms/
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <img src="{{ '/assets/images/logo-white.png' | relative_url }}" alt="Color Splash">
+                        <img src="/assets/images/logo-white.png" alt="Color Splash">
                     </div>
                     <p data-i18n="footer_description">Çocuklar için eğlenceli ve eğitici boyama uygulaması</p>
                     <div class="social-links">
@@ -147,26 +140,26 @@ permalink: /terms/
                 <div class="footer-section">
                     <h4 data-i18n="footer_quick_links">Hızlı Bağlantılar</h4>
                     <ul>
-                        <li><a href="{{ '/' | relative_url }}" data-i18n="nav_home">Ana Sayfa</a></li>
-                        <li><a href="{{ '/features/' | relative_url }}" data-i18n="nav_features">Özellikler</a></li>
-                        <li><a href="{{ '/download/' | relative_url }}" data-i18n="nav_download">İndir</a></li>
-                        <li><a href="{{ '/about/' | relative_url }}" data-i18n="nav_about">Hakkımızda</a></li>
+                        <li><a href="/index.html" data-i18n="nav_home">Ana Sayfa</a></li>
+                        <li><a href="/features.html" data-i18n="nav_features">Özellikler</a></li>
+                        <li><a href="/download.html" data-i18n="nav_download">İndir</a></li>
+                        <li><a href="/about.html" data-i18n="nav_about">Hakkımızda</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
                     <h4 data-i18n="footer_legal">Yasal</h4>
                     <ul>
-                        <li><a href="{{ '/privacy/' | relative_url }}" data-i18n="nav_privacy">Gizlilik Politikası</a></li>
-                        <li><a href="{{ '/terms/' | relative_url }}" class="active" data-i18n="nav_terms">Kullanım Şartları</a></li>
-                        <li><a href="{{ '/gdpr/' | relative_url }}" data-i18n="nav_gdpr">GDPR</a></li>
+                        <li><a href="/privacy.html" data-i18n="nav_privacy">Gizlilik Politikası</a></li>
+                        <li><a href="/terms.html" data-i18n="nav_terms">Kullanım Şartları</a></li>
+                        <li><a href="/gdpr.html" data-i18n="nav_gdpr">GDPR</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
                     <h4 data-i18n="footer_contact">İletişim</h4>
                     <ul>
-                        <li><a href="{{ '/contact/' | relative_url }}" data-i18n="nav_contact">İletişim</a></li>
+                        <li><a href="/contact.html" data-i18n="nav_contact">İletişim</a></li>
                         <li><a href="mailto:info@colorsplash.com">info@colorsplash.com</a></li>
                     </ul>
                 </div>
@@ -179,8 +172,8 @@ permalink: /terms/
     </footer>
 
     <!-- JavaScript -->
-    <script src="{{ '/assets/js/language.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/language.js"></script>
 </body>
 </html> 
 
