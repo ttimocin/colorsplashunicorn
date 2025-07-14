@@ -11,12 +11,12 @@ permalink: /contact/
     <meta name="description" content="Color Splash Unicorn Boyama uygulaması ile ilgili sorularınız için bizimle iletişime geçin">
     
      <!-- Favicon -->
-     <link rel="icon" href="/assets/images/logo.png" type="image/png">
-     <link rel="apple-touch-icon" href="/assets/images/logo.png">
+     <link rel="icon" href="assets/images/logo.png" type="image/png">
+     <link rel="apple-touch-icon" href="assets/images/logo.png">
      <link rel="manifest" href="assets/images/favicon/site.webmanifest">
      
      <!-- CSS -->
-     <link rel="stylesheet" href="/assets/css/styles.css">
+     <link rel="stylesheet" href="assets/css/styles.css">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,8 +43,8 @@ permalink: /contact/
     <header class="site-header">
         <div class="container">
             <div class="logo">
-                <a href="/index">
-                    <img src="/assets/images/logo.png" alt="Çocuk Boyama Logo" width="140" height="60">
+                <a href="index">
+                    <img src="assets/images/logo.png" alt="Çocuk Boyama Logo" width="140" height="60">
                 </a>
             </div>
             
@@ -57,12 +57,12 @@ permalink: /contact/
             
             <nav class="main-nav">
                 <ul>
-                    <li><a href="/index" data-i18n="menu_home">Ana Sayfa</a></li>
-                    <li><a href="/features" data-i18n="menu_features">Özellikler</a></li>
-                    <li><a href="/about" data-i18n="menu_about">Hakkımızda</a></li>
-                    <li><a href="/privacy" data-i18n="menu_privacy">Gizlilik Politikası</a></li>
-                    <li><a href="/contact" data-i18n="menu_contact">İletişim</a></li>
-                    <li><a href="/download" class="btn-download" data-i18n="menu_download">İndir</a></li>
+                    <li><a href="index" data-i18n="menu_home">Ana Sayfa</a></li>
+                    <li><a href="features" data-i18n="menu_features">Özellikler</a></li>
+                    <li><a href="about" data-i18n="menu_about">Hakkımızda</a></li>
+                    <li><a href="privacy" data-i18n="menu_privacy">Gizlilik Politikası</a></li>
+                    <li><a href="contact" data-i18n="menu_contact">İletişim</a></li>
+                    <li><a href="download" class="btn-download" data-i18n="menu_download">İndir</a></li>
                 </ul>
             </nav>
         </div>
@@ -205,21 +205,30 @@ permalink: /contact/
                     <img src="{{ '/assets/images/logo-white.png' | relative_url }}" alt="Çocuk Boyama Logo">
                     <p data-i18n="footer_description">Çocukların yaratıcılığını geliştiren eğlenceli boyama uygulaması</p>
                 </div>
-                <div class="footer-links">
-                    <h3 data-i18n="footer_quick_links">Hızlı Bağlantılar</h3>
+                <div class="footer-section">
+                    <h4 data-i18n="footer_quick_links">Hızlı Bağlantılar</h4>
                     <ul>
-                        <li><a href="/" data-i18n="menu_home">Ana Sayfa</a></li>
-                        <li><a href="/features" data-i18n="menu_features">Özellikler</a></li>
-                        <li><a href="/about" data-i18n="menu_about">Hakkımızda</a></li>
-                        <li><a href="/contact" data-i18n="menu_contact">İletişim</a></li>
+                        <li><a href="index" data-i18n="nav_home">Ana Sayfa</a></li>
+                        <li><a href="features" data-i18n="nav_features">Özellikler</a></li>
+                        <li><a href="download" data-i18n="nav_download">İndir</a></li>
+                        <li><a href="about" data-i18n="nav_about">Hakkımızda</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
-                    <h3 data-i18n="footer_legal">Yasal</h3>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer_legal">Yasal</h4>
                     <ul>
-                        <li><a href="/privacy" data-i18n="menu_privacy">Gizlilik Politikası</a></li>
-                        <li><a href="/terms" data-i18n="footer_terms">Kullanım Şartları</a></li>
-                        <li><a href="/gdpr" data-i18n="footer_gdpr">KVKK</a></li>
+                        <li><a href="privacy" data-i18n="nav_privacy">Gizlilik Politikası</a></li>
+                        <li><a href="terms" data-i18n="nav_terms">Kullanım Şartları</a></li>
+                        <li><a href="gdpr" data-i18n="nav_gdpr">GDPR</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer_contact">İletişim</h4>
+                    <ul>
+                        <li><a href="contact" data-i18n="nav_contact">İletişim</a></li>
+                        <li><a href="mailto:info@colorsplash.com">info@colorsplash.com</a></li>
                     </ul>
                 </div>
                 <div class="footer-social">
@@ -240,8 +249,8 @@ permalink: /contact/
     </footer>
 
     <!-- JavaScript -->
-    <script src="/assets/js/main.js"></script>
-    <script src="/assets/js/language.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/language.js"></script>
     <script>
         // Sayfa yüklendikten sonra akordiyon işlevini başlat
         document.addEventListener('DOMContentLoaded', function() {
